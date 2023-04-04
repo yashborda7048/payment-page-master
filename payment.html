@@ -216,29 +216,31 @@
                         </div>
                         <h6>Select the address that matches your card or payment method.</h6>
 
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion" id="BillingAccordion">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive" aria-expanded="true"
                                         aria-controls="collapseFive">
                                         <p class="text-dark mb-0">Same as shipping address</p>
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div id="collapseFive" class="accordion-collapse collapse "
+                                    aria-labelledby="headingFive" data-bs-parent="#BillingAccordion">
+                                    <div></div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingSix">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        data-bs-target="#collapseSix" aria-expanded="false" 
+                                        aria-controls="collapseSix">
                                         <p class="text-dark mb-0">
                                             Use a different billing address</p>
                                     </button>
                                 </h2>
                                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                    data-bs-parent="#accordionExample">
+                                    data-bs-parent="#BillingAccordion">
                                     <div class="accordion-body">
                                         <div class="form-floating">
                                             <label class="form-check-label" for="country">
@@ -593,7 +595,7 @@
                             <h5>Remember me</h5>
                         </div>
 
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion" id="RemeberAccordion">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingSeven">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -603,7 +605,7 @@
                                     </button>
                                 </h2>
                                 <div id="collapseSeven" class="accordion-collapse collapse "
-                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    aria-labelledby="headingSeven" data-bs-parent="#RemeberAccordion">
                                     <div class="accordion-body">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" id="number">
