@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.bg-color {
+  background: #fafafa;
+}
+
+.btn_shop_pay,
+.btn_shop_pay:hover {
+  background-color: #390ced;
+}
+
+.btn_pay_pal,
+.btn_pay_pal:hover {
+  background: #ffc439;
+}
+
+.btn_amazon_pay,
+.btn_amazon_pay:hover {
+  background-color: #fad676;
+}
+
+.form-floating input {
+  box-shadow: none !important;
+  font-size: 14px;
+}
+
+.form-floating input:focus {
+  border: 2px solid rgb(25, 144, 198);
+}
+
+.form-floating .form-check-label {
+  top: -11px;
+  color: #000000a3;
+}
+
+.form-floating label {
+  color: #000000a3;
+}
+
+.form-select,
+.form-check-input {
+  box-shadow: none !important;
+}
+
+.form-floating > .form-select {
+  padding-top: 25px;
+}
+
+.btn-submit {
+  color: #fff;
+  background-color: rgb(25, 144, 198);
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  opacity: 0.8;
+  color: #fff;
+  background-color: rgb(25, 144, 198);
+}
+
+.footer_link a {
+  color: rgb(25, 144, 198);
+}
+
+.product h5 {
+  font-size: 14px;
+}
+
+.product p {
+  font-size: 12px;
+}
+
+.product h6 {
+  font-size: 13px;
+}
+
+#panel {
+  display: none;
+}
+
+.accordion-button::after {
+  width: 24px;
+  height: 24px;
+  margin-left: 0%;
+  margin-right: 10px;
+  background-image: url(../images/no_check.png)
+}
+
+.accordion-button:not(.collapsed)::after {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/check.png)
+}
+
+.accordion-button {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: 1px solid rgb(25, 144, 198);
+}
+
+@media (min-width: 992px) {
+  #panel {
+    display: block;
+  }
+}

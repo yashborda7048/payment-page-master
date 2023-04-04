@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Name -->
+    <title>Payment Page</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- body -->
+
+<body>
+
+    <section class="container-fluid bg-color ">
+        <div class="row  d-block d-lg-none">
+            <div class="col-12 ">
+                <div class="logo py-3 bg-white">
+                    <img src="assets/images/logo.png" class="img-fluid" width="60" height="60" alt="logo">
+                </div>
+                <div class="d-flex justify-content-between py-3 border-bottom" id="flip">
+                    <p>
+                        <span><i class="fa fa-shopping-cart me-3" style="font-size:24px"></i></span>
+                        Show order summary
+                    </p>
+                    <h4>$100,019.99</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="d-none d-xl-block col-xl-1 bg-white"></div>
+            <div class="col-12 col-lg-6 col-xl-5 pt-5 pe-lg-5 border-end bg-white">
+                <div class="logo d-none d-lg-block">
+                    <img src="assets/images/logo.png" class="img-fluid" width="60" height="60" alt="logo">
+                </div>
+                <div class="mt-3">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Card</a></li>
+                            <li class="breadcrumb-item"><a>Information</a></li>
+                            <li class="breadcrumb-item"><a>Shipping</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Payment</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                    <div class="border-bottom w-100"></div>
+                    <div class="text-nowrap px-3">Express checkout</div>
+                    <div class="border-bottom w-100"></div>
+                </div>
+                <div class="row py-3 align-items-center ">
+                    <div class="col-sm-12 col-xxl-3">
+                        <a href="#" class="btn w-100 mt-3 btn_shop_pay">
+                            <svg preserveAspectRatio="xMidYMid" viewBox="0 0 424 102" fill="inherit"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="P3VGi" title="Shop Pay"
+                                style="fill: white; width: 85px;">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M204.916 30.1c3.978-4.92 10.15-8.998 17.52-8.998 16.544 0 29.576 13.696 29.565 30.595 0 17.61-13.096 30.64-28.81 30.64-8.355 0-14.75-4.277-17.087-7.845h-.222v25.864a.585.585 0 0 1-.586.589h-14.727a.598.598 0 0 1-.6-.587v-78.68c0-.16.064-.31.177-.422a.594.594 0 0 1 .423-.175h13.763a.59.59 0 0 1 .415.18c.11.11.17.26.17.418V30.1zm16.263 37.243a15.623 15.623 0 0 1-11.66-4.689 15.628 15.628 0 0 1-4.2-13.715 15.61 15.61 0 0 1 15.831-12.812 15.345 15.345 0 0 1 10.777 4.61 15.348 15.348 0 0 1 4.37 10.957 15.46 15.46 0 0 1-1.086 5.93 15.413 15.413 0 0 1-14.033 9.716z">
+                                </path>
+                                <path
+                                    d="M109.306 32.87c-3.402-7.136-9.852-11.746-19.57-11.746a19.486 19.486 0 0 0-15.304 7.868l-.354.432V1.454a.604.604 0 0 0-.18-.43.603.603 0 0 0-.43-.18h-13.74a.61.61 0 0 0-.599.61v80.23a.595.595 0 0 0 .596.598h14.717a.612.612 0 0 0 .61-.598v-34.21c0-6.647 4.433-11.357 11.525-11.357 7.757 0 9.718 6.383 9.718 12.888v32.68a.599.599 0 0 0 .6.597h14.683a.61.61 0 0 0 .61-.598v-34.63c0-1.185 0-2.35-.155-3.48a30.623 30.623 0 0 0-2.726-10.704zm-73.48 11.89s-7.49-1.76-10.25-2.47c-2.76-.71-7.58-2.217-7.58-5.863 0-3.646 3.89-4.81 7.833-4.81 3.944 0 8.332.954 8.675 5.33a.63.63 0 0 0 .631.575l14.505-.055a.636.636 0 0 0 .456-.198.631.631 0 0 0 .164-.467c-.898-14.008-13.187-19.017-24.523-19.017-13.44 0-23.27 8.865-23.27 18.64 0 7.136 2.016 13.83 17.873 18.483 2.782.81 6.56 1.862 9.863 2.78 3.967 1.11 6.105 2.783 6.105 5.42 0 3.06-4.43 5.186-8.786 5.186-6.305 0-10.782-2.338-11.148-6.538a.636.636 0 0 0-.632-.555l-14.472.067a.63.63 0 0 0-.632.653c.666 13.22 13.432 20.346 25.334 20.346 17.73 0 25.742-9.973 25.742-19.315.022-4.388-.987-14.384-15.89-18.196zm110.558-27.116c-13.73 0-20.578 4.666-26.074 8.4l-.167.11c-.283.195-.483.49-.56.823-.075.335-.02.687.15.984l5.43 9.355c.102.175.24.325.408.44a1.41 1.41 0 0 0 1.146.199c.192-.052.37-.146.52-.275l.433-.356c2.824-2.372 7.357-5.54 18.327-6.405 6.106-.49 11.38 1.107 15.27 4.742 4.278 3.945 6.838 10.316 6.838 17.043 0 12.378-7.292 20.157-19.005 20.312-9.653-.055-16.135-5.086-16.135-12.522 0-3.945 1.784-6.516 5.263-9.087.266-.19.454-.47.53-.788a1.356 1.356 0 0 0-.12-.94l-4.876-9.22a1.43 1.43 0 0 0-1.423-.734c-.19.025-.376.09-.54.19-5.474 3.247-12.19 9.186-11.824 20.6.443 14.528 12.522 25.62 28.224 26.075h1.863c18.66-.61 32.136-14.46 32.136-33.244 0-17.242-12.568-35.704-35.817-35.704z">
+                                </path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M282.375 1.044h125.652c8.672 0 15.703 7.03 15.703 15.703V85.54c0 8.672-7.03 15.702-15.703 15.702H282.375c-8.672 0-15.702-7.03-15.702-15.702V16.747c0-8.673 7.03-15.703 15.702-15.703zm28.19 54.488c10.484 0 17.986-7.647 17.986-18.362 0-10.66-7.5-18.35-17.983-18.35H292.06a.827.827 0 0 0-.831.83v50.786c0 .22.09.43.245.585a.836.836 0 0 0 .584.248h6.96a.827.827 0 0 0 .829-.831V56.363a.832.832 0 0 1 .831-.831h9.885zm-.53-29c5.695 0 9.895 4.5 9.895 10.638 0 6.15-4.2 10.638-9.896 10.638h-9.352a.829.829 0 0 1-.832-.82V27.363a.844.844 0 0 1 .832-.831h9.352zM330.6 61.526a9.903 9.903 0 0 1 .988-4.757 9.86 9.86 0 0 1 3.136-3.71c2.704-2.03 6.892-3.08 13.11-3.325l6.592-.222v-1.95c0-3.89-2.615-5.54-6.815-5.54-4.197 0-6.846 1.484-7.466 3.91a.803.803 0 0 1-.798.577h-6.505a.802.802 0 0 1-.634-.277.81.81 0 0 1-.196-.664c.974-5.764 5.74-10.14 15.9-10.14 10.794 0 14.683 5.02 14.683 14.604V70.4a.792.792 0 0 1-.06.32.822.822 0 0 1-.77.523h-6.572a.842.842 0 0 1-.59-.244.845.845 0 0 1-.24-.595v-1.52a.634.634 0 0 0-.09-.38.633.633 0 0 0-.3-.25.644.644 0 0 0-.39-.02.626.626 0 0 0-.327.22c-1.962 2.137-5.153 3.69-10.24 3.69-7.457.02-12.41-3.88-12.41-10.617zm23.826-4.433V55.52l-8.532.444c-4.5.232-7.126 2.105-7.126 5.252 0 2.848 2.405 4.433 6.594 4.433 5.696 0 9.064-3.083 9.064-8.546v-.01zm14.772 23.626v5.927a.855.855 0 0 0 .609.864c1.16.317 2.357.463 3.558.434 6.37 0 12.19-2.327 15.514-11.392l14.625-39.018a.846.846 0 0 0-.113-.753.848.848 0 0 0-.675-.354H395.9a.831.831 0 0 0-.798.577l-8.056 24.71a.832.832 0 0 1-.314.4c-.143.1-.312.152-.485.152s-.34-.053-.484-.15a.886.886 0 0 1-.313-.4l-9.286-24.78a.849.849 0 0 0-.31-.39.847.847 0 0 0-.477-.152h-6.648a.844.844 0 0 0-.786 1.109L381.62 72.63a.82.82 0 0 1 0 .565l-.432 1.363a7.878 7.878 0 0 1-7.945 5.621 16.409 16.409 0 0 1-3.048-.29.847.847 0 0 0-.996.834z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-4 col-xxl-3">
+                        <a href="#" class="btn w-100 mt-3 btn_pay_pal">
+                            <img src="assets/images/paypal.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4 col-xxl-3">
+                        <a href="#" class="btn w-100 mt-3 btn_amazon_pay">
+                            <svg viewBox="0 0 102 20" xmlns="http://www.w3.org/2000/svg" role="img" style="height: 16px;
+                            margin-top: 4px;
+                            width: 81.6px;">
+                                <path fill="#333e48"
+                                    d="M75.19 1.786c-.994 0-1.933.326-2.815.98v5.94c.896.683 1.82 1.023 2.774 1.023 1.932 0 2.899-1.32 2.899-3.96 0-2.655-.953-3.983-2.858-3.983zm-2.962-.277A5.885 5.885 0 0 1 73.93.444a4.926 4.926 0 0 1 1.85-.362c.672 0 1.282.127 1.827.383a3.763 3.763 0 0 1 1.387 1.108c.378.482.669 1.068.872 1.757.203.689.305 1.466.305 2.332 0 .88-.109 1.675-.326 2.385-.217.71-.522 1.314-.914 1.81a4.137 4.137 0 0 1-1.429 1.16 4.165 4.165 0 0 1-1.87.416c-1.26 0-2.346-.419-3.256-1.256v4.983c0 .284-.14.426-.42.426h-1.24c-.28 0-.42-.142-.42-.426V.827c0-.284.14-.426.42-.426h.925c.28 0 .441.142.483.426l.105.682zm13.194 8.37a4.21 4.21 0 0 0 1.45-.277 5.463 5.463 0 0 0 1.45-.81V6.62c-.35-.085-.719-.152-1.104-.202a8.8 8.8 0 0 0-1.124-.075c-1.583 0-2.374.617-2.374 1.853 0 .54.147.955.441 1.246.294.29.715.437 1.261.437zm-2.458-7.625-.158.053a.561.561 0 0 1-.179.033c-.182 0-.273-.128-.273-.384V1.38c0-.199.028-.337.084-.415.056-.078.169-.153.337-.224.448-.199 1-.359 1.66-.48.657-.12 1.316-.18 1.974-.18 1.33 0 2.311.277 2.942.83.63.554.945 1.413.945 2.577v7.284c0 .284-.14.426-.42.426h-.903c-.267 0-.42-.135-.463-.405l-.105-.702a5.74 5.74 0 0 1-1.67 1.022 4.908 4.908 0 0 1-1.817.362c-1.009 0-1.807-.288-2.395-.863-.589-.575-.883-1.345-.883-2.31 0-1.037.364-1.864 1.092-2.481.73-.618 1.71-.927 2.942-.927.784 0 1.667.12 2.647.362V3.852c0-.767-.168-1.307-.504-1.619-.336-.313-.925-.469-1.764-.469-.982 0-2.01.163-3.09.49zm14.16 10.84c-.379.98-.816 1.683-1.314 2.109-.496.426-1.144.639-1.943.639-.448 0-.847-.05-1.197-.15a.606.606 0 0 1-.336-.202c-.07-.093-.105-.237-.105-.437V14.5c0-.27.105-.405.315-.405.07 0 .175.014.315.043.14.028.33.043.567.043.532 0 .946-.128 1.24-.384.294-.255.56-.724.798-1.406l.4-1.086-4.056-10.137c-.098-.241-.146-.411-.146-.511 0-.17.097-.256.294-.256h1.26c.224 0 .378.036.463.106.083.072.167.228.251.47l2.942 8.263L99.708.976c.084-.24.168-.397.252-.469.084-.07.238-.106.462-.106h1.177c.196 0 .294.086.294.256 0 .1-.05.27-.147.51l-4.622 11.927M40.15 15.47c-3.761 2.814-9.216 4.31-13.912 4.31-6.583 0-12.51-2.466-16.996-6.572-.352-.322-.038-.763.385-.513 4.84 2.855 10.825 4.574 17.006 4.574 4.17 0 8.753-.877 12.971-2.691.636-.273 1.17.425.547.891">
+                                </path>
+                                <path fill="#333e48"
+                                    d="M41.717 13.657c-.482-.624-3.181-.296-4.394-.148-.368.044-.425-.281-.093-.517 2.153-1.533 5.682-1.09 6.092-.577.413.518-.108 4.104-2.127 5.816-.31.263-.605.122-.468-.225.455-1.15 1.471-3.724.99-4.349M37.429 2.06V.57A.365.365 0 0 1 37.8.193l6.59-.001c.21 0 .38.155.38.376v1.278c-.003.214-.18.494-.496.938L40.86 7.722c1.267-.03 2.607.163 3.757.818.26.148.33.367.35.582v1.59c0 .218-.237.472-.485.34-2.028-1.077-4.718-1.194-6.96.013-.23.124-.47-.126-.47-.345V9.209c0-.242.005-.656.246-1.024l3.953-5.75H37.81a.369.369 0 0 1-.38-.375M13.4 11.365h-2.005a.38.38 0 0 1-.358-.343L11.038.595a.38.38 0 0 1 .387-.375h1.866a.38.38 0 0 1 .365.35v1.36h.037C14.18.615 15.096 0 16.331 0c1.253 0 2.039.614 2.6 1.93C19.418.615 20.521 0 21.7 0c.842 0 1.758.351 2.32 1.141.635.878.505 2.15.505 3.27l-.002 6.58a.38.38 0 0 1-.387.374h-2.001a.378.378 0 0 1-.36-.374V5.463c0-.438.037-1.535-.056-1.952-.15-.703-.6-.9-1.179-.9-.486 0-.991.33-1.197.855-.206.527-.188 1.405-.188 1.997v5.527a.38.38 0 0 1-.386.375h-2.002a.379.379 0 0 1-.36-.374l-.001-5.528c0-1.163.186-2.874-1.235-2.874-1.44 0-1.384 1.668-1.384 2.874l-.001 5.527a.38.38 0 0 1-.387.375m37.059-9.236c-1.478 0-1.571 2.04-1.571 3.312 0 1.273-.02 3.993 1.552 3.993 1.554 0 1.628-2.194 1.628-3.532 0-.877-.038-1.93-.3-2.764-.224-.724-.673-1.01-1.31-1.01zM50.439 0c2.975 0 4.584 2.59 4.584 5.88 0 3.181-1.777 5.705-4.584 5.705-2.918 0-4.508-2.59-4.508-5.814C45.93 2.523 47.539 0 50.439 0zm8.441 11.365h-1.997a.379.379 0 0 1-.36-.374L56.52.561a.381.381 0 0 1 .386-.34L58.764.22c.175.009.32.13.356.291v1.595h.038C59.72.68 60.505 0 61.89 0c.898 0 1.778.329 2.339 1.229.524.834.524 2.237.524 3.247v6.561a.382.382 0 0 1-.385.328H62.36a.38.38 0 0 1-.357-.328V5.376c0-1.141.13-2.809-1.253-2.809-.487 0-.936.33-1.16.834-.281.636-.319 1.272-.319 1.975v5.614a.386.386 0 0 1-.39.375m-24.684.075a.41.41 0 0 1-.473.047c-.665-.56-.785-.82-1.149-1.354-1.1 1.136-1.879 1.477-3.304 1.477-1.687 0-3-1.055-3-3.166 0-1.65.882-2.77 2.138-3.32 1.087-.484 2.606-.572 3.769-.704v-.264c0-.484.037-1.055-.245-1.473-.243-.374-.712-.528-1.124-.528-.765 0-1.444.397-1.611 1.22-.035.183-.167.364-.348.374l-1.943-.214c-.164-.037-.346-.17-.299-.425C27.055.721 29.183 0 31.09 0c.975 0 2.25.263 3.018 1.011.975.924.881 2.155.881 3.497v3.165c0 .952.39 1.37.757 1.882.128.185.156.405-.007.54-.409.348-1.136.988-1.537 1.35l-.005-.005zm-2.02-4.953v-.44c-1.45 0-2.98.314-2.98 2.045 0 .88.45 1.473 1.218 1.473.562 0 1.069-.352 1.387-.923.394-.704.376-1.363.376-2.155zM7.926 11.44a.41.41 0 0 1-.473.047c-.667-.56-.786-.82-1.15-1.354C5.204 11.27 4.425 11.61 3 11.61c-1.688 0-3-1.055-3-3.166 0-1.65.88-2.77 2.137-3.32 1.087-.484 2.606-.572 3.768-.704v-.264c0-.484.038-1.055-.243-1.473-.244-.374-.713-.528-1.125-.528-.764 0-1.444.397-1.61 1.22-.036.183-.168.364-.35.374l-1.94-.214c-.165-.037-.347-.17-.3-.425C.783.721 2.911 0 4.818 0c.975 0 2.25.263 3.018 1.011.975.924.882 2.155.882 3.497v3.165c0 .952.39 1.37.756 1.882.128.185.157.405-.006.54a78.47 78.47 0 0 0-1.537 1.35l-.005-.005zm-2.02-4.953v-.44c-1.45 0-2.982.314-2.982 2.045 0 .88.45 1.473 1.219 1.473.562 0 1.069-.352 1.387-.923.394-.704.375-1.363.375-2.155z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-4 col-xxl-3">
+                        <a href="#" class="btn w-100 mt-3 btn-dark">
+                            <img src="assets/images/dark_gpay.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                    <div class="border-bottom w-100"></div>
+                    <div class="text-nowrap px-3">OR</div>
+                    <div class="border-bottom w-100"></div>
+                </div>
+
+                <form action="">
+                    <div class="d-flex justify-content-between">
+                        <h5>Contact information</h5>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="email">
+                        <label for="email">Email or mobile phone number</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Sign up for exclusive offers and news via text messages & email.
+                        </label>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <h5>Shipping address</h5>
+                    </div>
+                    <div class="form-floating">
+                        <label class="form-check-label" for="country">
+                            Country/Region
+                        </label>
+                        <select name="countryCode" id="country" required class="form-select">
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="AU">Australia</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="NO">Norway</option>
+                            <option disabled="" value="">---</option>
+                            <option value="AF">Afghanistan</option>
+                            <option value="AX">Åland Islands</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AG">Antigua &amp; Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AC">Ascension Island</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BA">Bosnia &amp; Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="VG">British Virgin Islands</option>
+                            <option value="BN">Brunei</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="CV">Cape Verde</option>
+                            <option value="BQ">Caribbean Netherlands</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo - Brazzaville</option>
+                            <option value="CD">Congo - Kinshasa</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CI">Côte d’Ivoire</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CW">Curaçao</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czechia</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="SZ">Eswatini</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GG">Guernsey</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-Bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong SAR</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IM">Isle of Man</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JE">Jersey</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="XK">Kosovo</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Laos</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libya</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MO">Macao SAR</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MV">Maldives</option>
+                            <option value="ML">Mali</option>
+                            <option value="MT">Malta</option>
+                            <option value="MQ">Martinique</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="MU">Mauritius</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">Mexico</option>
+                            <option value="MD">Moldova</option>
+                            <option value="MC">Monaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MA">Morocco</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="MM">Myanmar (Burma)</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="NC">New Caledonia</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Niger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk Island</option>
+                            <option value="MK">North Macedonia</option>
+                            <option value="NO">Norway</option>
+                            <option value="OM">Oman</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PS">Palestinian Territories</option>
+                            <option value="PA">Panama</option>
+                            <option value="PG">Papua New Guinea</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PN">Pitcairn Islands</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RE">Réunion</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russia</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="WS">Samoa</option>
+                            <option value="SM">San Marino</option>
+                            <option value="ST">São Tomé &amp; Príncipe</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="SN">Senegal</option>
+                            <option value="RS">Serbia</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leone</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SX">Sint Maarten</option>
+                            <option value="SK">Slovakia</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="SB">Solomon Islands</option>
+                            <option value="SO">Somalia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GS">South Georgia &amp; South Sandwich Islands</option>
+                            <option value="KR">South Korea</option>
+                            <option value="SS">South Sudan</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="BL">St. Barthélemy</option>
+                            <option value="SH">St. Helena</option>
+                            <option value="KN">St. Kitts &amp; Nevis</option>
+                            <option value="LC">St. Lucia</option>
+                            <option value="MF">St. Martin</option>
+                            <option value="PM">St. Pierre &amp; Miquelon</option>
+                            <option value="VC">St. Vincent &amp; Grenadines</option>
+                            <option value="SD">Sudan</option>
+                            <option value="SR">Suriname</option>
+                            <option value="SJ">Svalbard &amp; Jan Mayen</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="TW">Taiwan</option>
+                            <option value="TJ">Tajikistan</option>
+                            <option value="TZ">Tanzania</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TL">Timor-Leste</option>
+                            <option value="TG">Togo</option>
+                            <option value="TK">Tokelau</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad &amp; Tobago</option>
+                            <option value="TA">Tristan da Cunha</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey</option>
+                            <option value="TM">Turkmenistan</option>
+                            <option value="TC">Turks &amp; Caicos Islands</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UM">U.S. Outlying Islands</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VA">Vatican City</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="VN">Vietnam</option>
+                            <option value="WF">Wallis &amp; Futuna</option>
+                            <option value="EH">Western Sahara</option>
+                            <option value="YE">Yemen</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabwe</option>
+                        </select>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6 px-2">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="fname">
+                                <label for="fname">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-2">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="lname">
+                                <label for="lname">Last Name</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="address">
+                        <label for="address">Address</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="apartment">
+                        <label for="apartment">Apartment, suite, etc. (optional)</label>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 px-2">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="city">
+                                <label for="city">City</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-2">
+                            <div class="form-floating">
+                                <label class="form-check-label" for="state">
+                                    State
+                                </label>
+                                <select name="zone" id="state" required class="form-select">
+                                    <option hidden="" disabled="" value="">&nbsp;</option>
+                                    <option value="AN">Andaman and Nicobar Islands</option>
+                                    <option value="AP">Andhra Pradesh</option>
+                                    <option value="AR">Arunachal Pradesh</option>
+                                    <option value="AS">Assam</option>
+                                    <option value="BR">Bihar</option>
+                                    <option value="CH">Chandigarh</option>
+                                    <option value="CG">Chhattisgarh</option>
+                                    <option value="DN">Dadra and Nagar Haveli</option>
+                                    <option value="DD">Daman and Diu</option>
+                                    <option value="DL">Delhi</option>
+                                    <option value="GA">Goa</option>
+                                    <option value="GJ">Gujarat</option>
+                                    <option value="HR">Haryana</option>
+                                    <option value="HP">Himachal Pradesh</option>
+                                    <option value="JK">Jammu and Kashmir</option>
+                                    <option value="JH">Jharkhand</option>
+                                    <option value="KA">Karnataka</option>
+                                    <option value="KL">Kerala</option>
+                                    <option value="LA">Ladakh</option>
+                                    <option value="LD">Lakshadweep</option>
+                                    <option value="MP">Madhya Pradesh</option>
+                                    <option value="MH">Maharashtra</option>
+                                    <option value="MN">Manipur</option>
+                                    <option value="ML">Meghalaya</option>
+                                    <option value="MZ">Mizoram</option>
+                                    <option value="NL">Nagaland</option>
+                                    <option value="OR">Odisha</option>
+                                    <option value="PY">Puducherry</option>
+                                    <option value="PB">Punjab</option>
+                                    <option value="RJ">Rajasthan</option>
+                                    <option value="SK">Sikkim</option>
+                                    <option value="TN">Tamil Nadu</option>
+                                    <option value="TS">Telangana</option>
+                                    <option value="TR">Tripura</option>
+                                    <option value="UP">Uttar Pradesh</option>
+                                    <option value="UK">Uttarakhand</option>
+                                    <option value="WB">West Bengal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-2">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="pin">
+                                <label for="pin">PIN code</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="apartment">
+                        <label for="apartment">Phone number for updates and exclusive offers</label>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-5">
+                        <a href="#" class="text-decoration-none">
+                            < Return to cart</a>
+                                <button type="submit" class="btn btn-submit py-3">Continue to shipping</button>
+                    </div>
+                </form>
+
+                <hr>
+                <div class="footer_link">
+                    <div class="mt-2">
+                        <a href="#">Refund policy</a> <a href="#" class="ms-3">Shipping policy</a>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#">
+                            By checking the sign-up box for text message offers and clicking Join our VIP Text Club,
+                            I
+                            consent to receive recurring automated marketing text messages from My Paint by Numbers
+                            at
+                            the number provided, and I agree that texts may be sent using an auto dialer or other
+                            technology. Consent is not a condition of purchase. Text STOP to cancel, HELP for help.
+                            Message and Data rates may apply. For more information see Terms of Service & Privacy
+                            Policy.
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#">Terms of service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-5 pt-3 pt-lg-5 ps-lg-5 product" id="panel">
+                <div class="d-flex align-items-center gap-3 ">
+                    <div class="rounded border position-relative">
+                        <img src="assets/images/cart_product.jpg" alt="">
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                            1
+                        </span>
+                    </div>
+                    <div>
+                        <h5 class="mb-0">Tree of Life - William Morris</h5>
+                        <p class="mb-0">16"x20" (40x50cm) No Frame</p>
+                    </div>
+                    <div class="ms-auto">
+                        <h6>$19.99</h6>
+                    </div>
+                </div>
+                <form>
+                    <div class="row ">
+                        <div class="col-lg-9 mt-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="email">
+                                <label for="email text">Gift card or discount code</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mt-4">
+                            <button type="submit" class="btn btn-secondary w-100 h-100">Apply</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-between mt-3">
+                    <h5>Subtotal</h5>
+                    <h6>$19.99</h6>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h5>Shipping</h5>
+                    <h6>Calculated at next step </h6>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h5>Estimated taxes </h5>
+                    <h6>$1.20</h6>
+                </div>
+                <div class="d-flex justify-content-between my-3">
+                    <h5>Total</h5>
+                    <h6>USD<span class="h3"> $21.19</span></h6>
+                </div>
+            </div>
+            <div class="d-none d-xl-block col-xl-1"></div>
+        </div>
+    </section>
+
+    <!-- JS script link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+
+
+</html>
